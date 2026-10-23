@@ -14,6 +14,7 @@
 12. CORS: API-ul de test permite cereri intre origini; permisiunea este data prin headerele serverului, nu din JavaScript. POST si DELETE sunt simulate si nu se salveaza definitiv.
 
 Link site public (GitHub Pages): https://ioancalbaza-spec.github.io/tema-api-PRSW
+
 Link repository GitHub: ttps://github.com/ioancalbaza-spec/tema-api-PRSW
 
 **Verificare:** deschid `index.html` in browser (sau in VS Code cu Live Server), apoi testez lista, cautarea, adaugarea, stergerea, tabul Network din DevTools si latimea 360 px.

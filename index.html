@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postările mele - API REST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Postările mele</h1>
+        <p>Exercițiu cu HTML, CSS, JavaScript și un API REST</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Adaugă o postare</h2>
+            <form id="formular">
+                <div class="camp">
+                    <label for="userId">ID utilizator</label>
+                    <input id="userId" name="userId" type="number" min="1" value="1" required>
+                </div>
+                <div class="camp">
+                    <label for="title">Titlu</label>
+                    <input id="title" name="title" type="text" minlength="3" required>
+                </div>
+                <div class="camp">
+                    <label for="body">Textul postării</label>
+                    <textarea id="body" name="body" rows="4" required></textarea>
+                </div>
+                <button id="buton-adauga" type="submit">Adaugă</button>
+                <p id="mesaj-formular" class="mesaj" role="status"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista postărilor</h2>
+            <div class="camp">
+                <label for="cautare">Caută după titlu</label>
+                <input id="cautare" name="cautare" type="search" placeholder="Scrie un cuvânt...">
+            </div>
+            <p id="mesaj-lista" class="mesaj" role="status">Se încarcă...</p>
+            <ul id="lista-postari"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Date pentru exercițiu: JSONPlaceholder</p>
+    </footer>
+</body>
+</html>

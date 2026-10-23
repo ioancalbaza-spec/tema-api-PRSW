@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f4;
+    color: #222;
+}
+
+header {
+    background: #176354;
+    color: white;
+    padding: 22px 12px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+section {
+    min-width: 0;
+    padding: 18px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.camp {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 4px;
+    background: #176354;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104839;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+#lista-postari {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+
+.postare {
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fafafa;
+    overflow-wrap: anywhere;
+}
+
+.postare h3 {
+    margin-top: 0;
+}
+
+.postare p {
+    white-space: pre-line;
+}
+
+.buton-sterge {
+    background: #a12d2d;
+}
+
+.buton-sterge:hover {
+    background: #792020;
+}
+
+.mesaj {
+    min-height: 20px;
+    margin: 10px 0;
+    color: #176354;
+    overflow-wrap: anywhere;
+}
+
+.eroare {
+    color: #a12d2d;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
